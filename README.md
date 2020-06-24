@@ -7,7 +7,7 @@ Bulk loading of PS2 ISO images using [`hdl-dump`](https://github.com/AKuHAK/hdl-
 - Python3.8+
 - Pipenv
 
-## Installation
+## Setup
 
 ```console
 $ pipenv sync
