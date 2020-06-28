@@ -62,7 +62,7 @@ def get_serial_and_name(iso):
     elif (name := build_serial_db().get(f"{serial[0]}-{serial[1]}{serial[2]}", None)) is not None:
         return (serial, name)
     else:
-        return (serial, os.path.splitext(os.path.basename(iso))[1])
+        return (serial, os.path.splitext(os.path.basename(iso))[0])
 
 
 def short_title(txt):
