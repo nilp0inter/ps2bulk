@@ -73,7 +73,7 @@ def short_title(txt):
 
 
 def build_hdl_command(device, title, iso, serial):
-    return ["hdl-dump", "inject_dvd", device, title, iso, serial, "*u4"]
+    return ["hdl_dump", "inject_dvd", device, title, iso, serial, "*u4"]
 
 
 def command_from_iso(device, iso):
