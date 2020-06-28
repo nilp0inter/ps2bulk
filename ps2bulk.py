@@ -31,7 +31,7 @@ def get_games(root):
         serials = game.find('serial')
         if serials is not None:
             for serial in serials.text.split(','):
-                yield (serial.strip(), name)
+                yield (serial.strip().replace(' ', '-'), name)
 
 
 @lru_cache()
